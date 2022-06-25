@@ -1,0 +1,23 @@
+#not-found img {
+    max-width: 30%;
+}
+
+#not-found h1 {
+    font-size: 2rem;
+    color: var(--blue-deep);
+}
+
+#not-found p, #not-found nav a {
+    font-size: 0.9rem;
+}
+
+#not-found nav a {
+    display: block;
+    color: var(--red-deep);
+}
+
+@media (max-width: 620px) {
+    #not-found img {
+        max-width: 100%;
+    }
+}

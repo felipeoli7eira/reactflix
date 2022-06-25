@@ -1,0 +1,59 @@
+#movie .movie-backdrop {
+    min-height: 80vh;
+    background-position: center center;
+    background-size: cover;
+}
+
+#movie .movie-backdrop .movie-details {
+    /* background-color: hsl(0deg 0% 100% / 90%);
+    bottom: -30px;
+    left: -20px;
+    max-width: 60vw;
+    backdrop-filter: blur(2px); */
+    bottom: 0px;
+    left: 0px;
+    max-width: 60vw;
+    backdrop-filter: blur(24px);
+}
+#movie .movie-backdrop .movie-details h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+#movie .movie-backdrop .movie-details p {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+#movie .movie-backdrop .movie-details .badge-movie,
+#movie .movie-backdrop .movie-details .movie-release-date {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+#movie .movie-backdrop .movie-details .badge-movie {
+    border-radius: 2px;
+    padding: 2px 5px;
+    background-color: var(--red-secondary);
+}
+
+#movie .movie-link-homepage {
+    background-color: var(--red-deep);
+    color: var(--white);
+    font-weight: 400;
+}
+
+#movie .movie-link-homepage:hover {
+    background-color: var(--red-secondary);
+}
+
+#movie .btn-save-movie {
+    background-color: var(--blue-secondary);
+    color: var(--blue-deep);
+    font-weight: 600;
+}
+
+#movie .btn-remove-from-favorites {
+    background-color: #EFEA5A;
+    color: var(--deep-gray);
+}

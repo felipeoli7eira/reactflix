@@ -1,0 +1,18 @@
+:root {
+    --blue-deep: #2b2d42;
+    --blue-secondary: #8d99ae;
+    --white: #edf2f4;
+    --red-deep: #d90429;
+    --red-secondary: #ef233c;
+    --deep-gray: #202020;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'Anek Latin', sans-serif;
+}
+
+body {
+    background-color: var(--deep-gray) !important;
+}

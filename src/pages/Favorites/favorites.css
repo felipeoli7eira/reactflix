@@ -1,0 +1,15 @@
+#favorites {
+    max-width: 50rem;
+    margin: 0 auto;
+    background-color: var(--deep-gray);
+}
+
+#favorites .fav-title {
+    font-weight: 600;
+    color: var(--deep-gray);
+}
+
+#favorites .fav-release-date {
+    color: var(--blue-deep);
+    font-size: 0.8rem;
+}
