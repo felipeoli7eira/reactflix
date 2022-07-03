@@ -90,7 +90,7 @@ export default function Movie() {
                 </div>
             </div>
 
-            <div className="shadow shadow-3 p-3 d-flex gap-3 align-items-center bg-white">
+            <div className="shadow shadow-3 p-3 d-flex gap-3 align-items-center bg-white overflow-auto text-nowrap">
                 {movie.production_companies.map(companie => {
                     if (companie.logo_path) {
                         return (<img key={companie.id} loading="lazy" width={60} src={getPoster(companie.logo_path)} alt={companie.name} />);
@@ -100,18 +100,18 @@ export default function Movie() {
                 })}
             </div>
 
-            <div className="mt-5 d-flex justify-content-between gap-2">
+            <div className="mt-5 d-flex justify-content-between gap-2 flex-wrap">
                 {
                     isFav || isFavoriteMovie(movie.id) ?
-                    (<button className="btn btn-lg btn-remove-from-favorites" onClick={() => removeFav(movie.id)}>remover dos favoritar</button>)
+                    (<button className="btn btn-lg btn-remove-from-favorites text-nowrap" onClick={() => removeFav(movie.id)}>remover dos favoritar</button>)
                     :
                     (<button className="btn btn-lg btn-save-movie" onClick={() => saveFav(movie)}>favoritar</button>)
                 }
 
-                <nav className="d-flex gap-3">
+                <nav className="d-flex gap-3 flex-wrap">
                     {
                         "homepage" in movie &&
-                        (<a href={movie.homepage} target="_blank" rel="noreferrer" className="btn btn-lg movie-link-homepage">{movie.original_title}</a>)
+                        (<a href={movie.homepage} target="_blank" rel="noreferrer" className="btn btn-lg movie-link-homepage text-nowrap">{movie.original_title}</a>)
                     }
                     <a href={`https://youtube.com/results?search_query=${movie.title} trailer`} target="_blank" rel="noreferrer" className="btn btn-lg movie-link-homepage">Trailer</a>
                 </nav>

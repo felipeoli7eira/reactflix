@@ -15,6 +15,7 @@
     max-width: 60vw;
     backdrop-filter: blur(24px);
 }
+
 #movie .movie-backdrop .movie-details h1 {
     font-size: 1.8rem;
     font-weight: 600;
@@ -56,4 +57,13 @@
 #movie .btn-remove-from-favorites {
     background-color: #EFEA5A;
     color: var(--deep-gray);
+}
+
+/* x-small */
+@media (max-width: 900px) {
+    #movie .movie-backdrop .movie-details {
+        max-width: 100%;
+        min-width: 100%;
+        backdrop-filter: blur(24px);
+    }
 }
