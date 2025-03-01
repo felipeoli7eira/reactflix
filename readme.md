@@ -1,6 +1,8 @@
 # ReactFlix
 ### Projeto com ReactJS para fins de estudo do framework.
 
+Live: [reactflix](https://reactflix-nine.vercel.app/filme/539972)
+
 # Dependências
 * [React-Toastify](https://fkhadra.github.io/react-toastify/introduction)
 
